@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="mni">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meetei Mayek Replacer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ꯃꯤꯇꯩ ꯃꯦꯌꯦꯛ Replacer</h1>
+    <small id="last-synced">Last synced: never</small>
+  </header>
+
+  <main>
+    <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+
+    <div class="buttons">
+      <button id="replaceBtn">Replace</button>
+      <button id="refreshBtn">Refresh</button>
+    </div>
+
+    <div id="progressContainer">
+      <div id="progressBar"></div>
+    </div>
+
+    <textarea id="outputText" placeholder="Output will appear here..." readonly></textarea>
+
+    <section class="dictionary">
+      <h2>Custom Dictionary</h2>
+      <input type="file" id="uploadDictionary" accept=".json,.csv">
+      <button id="downloadDictionary">Download Current Dictionary</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
